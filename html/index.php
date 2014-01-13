@@ -1,5 +1,5 @@
 <?php
-$css_updated = "20140113c";
+$css_updated = "20140113d";
 $title = "SchnitMyDadSays";
 ?>
 <!-- Website design and development by Brendan Murty - brendanmurty.com -->
@@ -29,7 +29,7 @@ $title = "SchnitMyDadSays";
 			<h1><a href="/"><?= $title ?></a></h1>
 		</header>
 		<div id="main">
-			<img class="avatar" src="/images/schnitty.jpg" style="height:300px;width:400px" alt="schnitmydadsays's Twitter Avatar">
+			<img class="avatar" src="/images/schnitzel.jpg" style="height:400px;width:400px" alt="Veal Schnitzel">
 			<p class="description">Schnitzel reviews, comments and general chatter. Based out of Sydney, Australia, but good schnit knows no borders. Get into a schnitty!</p>
 			<ul class="links">
 				<li><a href="http://twitter.com/schnitmydadsays">Twitter</a></li>
