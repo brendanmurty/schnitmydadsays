@@ -1,9 +1,5 @@
-<?
-$css_updated = '20140113b';
-
-//$code_path = dirname(dirname(dirname(__FILE__))).'/brendanmurty.com/html/common';
-//include_once($code_path.'/functions.php');
-
+<?php
+$css_updated = "20140113c";
 $title = "SchnitMyDadSays";
 ?>
 <!-- Website design and development by Brendan Murty - brendanmurty.com -->
@@ -30,10 +26,10 @@ $title = "SchnitMyDadSays";
 <body>
 	<div id="contain">
 		<header>
-			<h1><?= $title ?></h1>
+			<h1><a href="/"><?= $title ?></a></h1>
 		</header>
 		<div id="main">
-			<img class="avatar" src="/images/avatar.jpg" style="height:73px;width:73px" alt="schnitmydadsays's Twitter Avatar">
+			<img class="avatar" src="/images/schnitty.jpg" style="height:300px;width:400px" alt="schnitmydadsays's Twitter Avatar">
 			<p class="description">Schnitzel reviews, comments and general chatter. Based out of Sydney, Australia, but good schnit knows no borders. Get into a schnitty!</p>
 			<ul class="links">
 				<li><a href="http://twitter.com/schnitmydadsays">Twitter</a></li>
