@@ -8,6 +8,9 @@ $title = 'SchnitMyDadSays';
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 <meta name="google-site-verification" content="c_GZamtpqx8T9vZ0REBwjhg9C-nW1EAfLZ5dD_3ztOw" />
+<meta name="author" content="Brendan Murty">
+<meta name="description" content="Schnitzel reviews, comments and general chatter." />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
 <title><?= $title ?></title>
 <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 <link href="/style/main.css?v=<?= $css_updated ?>" rel="stylesheet" type="text/css">
