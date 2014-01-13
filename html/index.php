@@ -1,6 +1,6 @@
 <?php
-$css_updated = "20140113d";
-$title = "SchnitMyDadSays";
+$css_updated = '20140113e';
+$title = 'SchnitMyDadSays';
 ?>
 <!-- Website design and development by Brendan Murty - brendanmurty.com -->
 <!DOCTYPE html>
