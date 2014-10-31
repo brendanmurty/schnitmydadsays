@@ -45,7 +45,7 @@ a:hover{text-decoration:underline}
 #contain{width:90%;max-width:400px;margin:10px auto}
 header{padding:0;margin:0 0 20px;float:left;width:100%}
 #main{background:#fff;color:#333;float:left;width:100%}
-footer{padding:10px;margin:0;color:#333;float:left;width:100%;font-size:11px}
+footer{padding:0;margin:0;color:#333;float:left;width:100%;font-size:11px}
 
 /* Headings */
 
