@@ -1,73 +1,182 @@
-/* Reset */
-
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-body{font:16px/1.3em sans-serif;*font-size:small}
-select,input,textarea,button{font:99% sans-serif}
-a:hover,a:active{outline:0}
-ul,ol{margin-left:1.8em;clear:both}
-ol{list-style-type:decimal}
-nav ul,nav li{margin:0}
-small{font-size:85%}
-strong,th{font-weight:bold}
-td,td img{vertical-align:top}
-sub{vertical-align:sub;font-size:smaller}
-sup{vertical-align:super;font-size:smaller}
-textarea{overflow:auto}
-input[type="radio"]{vertical-align:text-bottom}
-input[type="checkbox"]{vertical-align:bottom}
-label,input[type=button],input[type=submit],button{cursor:pointer}
-button,input,select,textarea{margin:0}
-input:invalid,textarea:invalid{border-radius:1px;-moz-box-shadow:0 0 5px red;-webkit-box-shadow:0 0 5px red;box-shadow:0 0 5px red}
-::-moz-selection{background:#2ea8c0;color:#fff;text-shadow:none}
-::selection{background:#2ea8c0;color:#fff;text-shadow:none}
-a:link{-webkit-tap-highlight-color:#2ea8c0}
-button{width:auto;overflow:visible}
-input[type="submit"],input[type="text"]{line-height:normal}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
-
 /* General */
 
-body{background:#fff;color:#333;font:16px/25px 'Droid Sans',arial,serif}
-p{margin:0 0 6px;padding:0;clear:both}
-a,a:visited{color:#A32500;text-decoration:none}
-a:hover{text-decoration:underline}
+body {
+    font: 16px/25px 'Droid Sans',arial,serif;
+
+    color: #333;
+    background: #fff;
+}
+
+p {
+    clear: both;
+
+    margin: 0 0 6px;
+    padding: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+
+    color: #a32500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 /* Layout */
 
-#contain{width:90%;max-width:400px;margin:10px auto}
-header{padding:0;margin:0 0 20px;float:left;width:100%}
-#main{background:#fff;color:#333;float:left;width:100%}
-footer{padding:0;margin:0;color:#333;float:left;width:100%;font-size:11px}
+.bg-image {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(../images/chicken-schnitzel.jpg) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    -webkit-filter: blur(3px) opacity(0.75);
+    -moz-filter: blur(3px) opacity(0.75);
+    -o-filter: blur(3px) opacity(0.75);
+    -ms-filter: blur(3px) opacity(0.75);
+    filter: blur(3px) opacity(0.75);
+    z-index: 1;
+}
+
+#contain {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+#main {
+    color: #333;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+footer {
+    font-size: 11px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+}
+
 
 /* Headings */
 
-h1,h2,h3,h4{margin:20px 0;padding:0;clear:both;color:#000;font-family:'Droid Sans',arial,serif}
-h1{font-size:2em}
-h2{font-size:1.5em}
-h2.first{margin-top:0}
-h3{font-size:1.2em}
-h4{font-size:1em}
-header h1{margin:0;font-size:35px;line-height:50px;color:#A32500}
+h1 {
+    font-size: 35px;
+    line-height: 50px;
+
+    margin: 0;
+
+    color: #a32500;
+}
+
 
 /* Content */
 
-.avatar{max-width:100%;display:block;margin:0 0 15px;padding:0}
-.description{margin:0;clear:none}
-ul.links{margin:25px 0 0;float:left;clear:both}
-ul.links li{float:left;list-style:none outside none;margin:0 15px 25px 0}
-ul.links a{color:#fff;text-decoration:none;padding:10px 20px;background:#A32500;border-radius:4px;line-height:25px}
-ul.links a:active,ul.links a:focus,ul.links a:hover{background-color:#c52d00}
+.logo {
+    background: #eb362d;
+    border-radius: 50%;
+    color: #fff6c2;
+    font-family: 'PT Serif', serif;
+    font-size: 2.5em;
+    line-height: 1;
+    margin: 0 auto;
+    padding: 1.6em 1em 1.3em;
+    text-align: center;
+    width: 5em;
+    border: 4px solid #fff6c2;
+    box-shadow: 0px 0px 1px #eb362d, -1px 0px 1px #eb362d, 1px 0px 1px #eb362d, 0px -1px 1px #eb362d, 0px 1px 1px #eb362d;
+}
+
+.logo .schnit {
+    display: block;
+    font-size: 1.7em;
+}
+
+.logo hr {
+    border-style: outset;
+    border-top: 5px solid #fff6c2;
+    border-left: 5px solid transparent;
+    border-bottom: 0;
+    border-right: 5px solid transparent;
+}
+
+.description {
+    clear: none;
+
+    margin: 0;
+}
+
+ul.links {
+    clear: both;
+
+    margin: 25px 0 0;
+}
+
+ul.links li {
+    margin: 0 15px 25px 0;
+    list-style: none;
+    display: inline-block;
+}
+
+ul.links a {
+    line-height: 1;
+
+    padding: 10px 20px;
+
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 4px;
+    background: #eb362d;
+}
+
+ul.links a:active,
+ul.links a:focus,
+ul.links a:hover {
+    background-color: #c52d00;
+}
+
 
 /* Footer */
 
-footer a,footer a:visited,footer a:hover{color:#333;border-bottom:1px dotted #333}
-footer a:hover{text-decoration:none}
-footer p{margin:0;padding:0;clear:none}
+footer a,
+footer a:visited,
+footer a:hover {
+    color: #fff;
+}
+
+footer a:hover {
+    border-bottom: 1px dotted #eb362d;
+    color: #eb362d;
+}
+
+footer p {
+    clear: none;
+
+    margin: 0;
+    padding: 0;
+}
+
