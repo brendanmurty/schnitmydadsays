@@ -1,6 +1,6 @@
 SchnitMyDadSays
 ================
 
-Contains the website at [schnitmydadsays.com](http://schnitmydadsays.com)
+The entire [SchnitMyDadSays website](http://schnitmydadsays.com).
 
-The */assets/* directory and it's contents are Copyright Brendan Murty. You may not reuse anything therein without my permission.
+Schnitzel reviews, comments and general chatter. Based out of Sydney, Australia, but good schnit knows no borders. Get into a schnitty!
