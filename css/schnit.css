@@ -28,6 +28,8 @@ a:hover {
 img {
     max-width: 100%;
     max-height: 400px;
+    margin: 0 auto 20px;
+    display: block;
 }
 
 /* Layout */
@@ -63,7 +65,7 @@ img {
     color: #333;
     width: 90%;
     max-width: 400px;
-    margin: 10px auto;
+    margin: 0 auto;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -116,6 +118,7 @@ ul.links {
 
 ul.links li {
     margin: 0 15px 25px 0;
+    padding: 0;
     list-style: none;
     display: inline-block;
 }
@@ -168,7 +171,7 @@ footer p {
 
 @media (max-width: 480px) {
     img {
-        max-height: 300px;
+        max-height: 280px;
     }
 
     ul.links {
