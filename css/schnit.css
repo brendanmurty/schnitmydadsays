@@ -27,6 +27,7 @@ a:hover {
 
 img {
     max-width: 100%;
+    max-height: 400px;
 }
 
 /* Layout */
@@ -166,6 +167,9 @@ footer p {
 /* Small screens */
 
 @media (max-width: 480px) {
+    img {
+        max-height: 300px;
+    }
 
     ul.links {
         margin: 0;
