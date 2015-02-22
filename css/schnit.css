@@ -171,16 +171,20 @@ footer p {
 
 @media (max-width: 480px) {
     img {
-        max-height: 280px;
+        max-height: 260px;
     }
 
     ul.links {
         margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     ul.links li {
         display: block;
         margin: 0 0 25px;
+        padding: 0;
+        width: 100%;
     }
 
     ul.links a {
