@@ -37,7 +37,7 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url(../images/schnit-bg.jpg) center center no-repeat;
+    background: url(/images/schnit.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
@@ -166,11 +166,11 @@ footer p {
 /* Small screens */
 
 @media (max-width: 480px) {
-    
+
     ul.links {
         margin: 0;
     }
-    
+
     ul.links li {
         display: block;
         margin: 0 0 25px;
