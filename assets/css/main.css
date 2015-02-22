@@ -25,6 +25,9 @@ a:hover {
     text-decoration: underline;
 }
 
+img {
+    max-width: 100%;
+}
 
 /* Layout */
 
@@ -34,15 +37,15 @@ a:hover {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url(../images/chicken-schnitzel.jpg) center top no-repeat;
+    background: url(../images/schnit-bg.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
-    -webkit-filter: blur(3px) opacity(0.75);
-    -moz-filter: blur(3px) opacity(0.75);
-    -o-filter: blur(3px) opacity(0.75);
-    -ms-filter: blur(3px) opacity(0.75);
-    filter: blur(3px) opacity(0.75);
+    -webkit-filter: blur(2px) opacity(0.75);
+    -moz-filter: blur(2px) opacity(0.75);
+    -o-filter: blur(2px) opacity(0.75);
+    -ms-filter: blur(2px) opacity(0.75);
+    filter: blur(2px) opacity(0.75);
     z-index: 1;
 }
 
@@ -97,34 +100,6 @@ h1 {
 
 /* Content */
 
-.logo {
-    background: #eb362d;
-    border-radius: 50%;
-    color: #fff6c2;
-    font-family: 'PT Serif', serif;
-    font-size: 2.5em;
-    line-height: 1;
-    margin: 0 auto;
-    padding: 1.6em 1em 1.3em;
-    text-align: center;
-    width: 5em;
-    border: 4px solid #fff6c2;
-    box-shadow: 0px 0px 1px #eb362d, -1px 0px 1px #eb362d, 1px 0px 1px #eb362d, 0px -1px 1px #eb362d, 0px 1px 1px #eb362d;
-}
-
-.logo .schnit {
-    display: block;
-    font-size: 1.7em;
-}
-
-.logo hr {
-    border-style: outset;
-    border-top: 5px solid #fff6c2;
-    border-left: 5px solid transparent;
-    border-bottom: 0;
-    border-right: 5px solid transparent;
-}
-
 .description {
     clear: none;
 
@@ -133,8 +108,9 @@ h1 {
 
 ul.links {
     clear: both;
-
-    margin: 25px 0 0;
+    -webkit-padding-start: 0;
+    margin: 25px -15px 0 0;
+    text-align: center;
 }
 
 ul.links li {
@@ -153,6 +129,10 @@ ul.links a {
     color: #fff;
     border-radius: 4px;
     background: #eb362d;
+    box-shadow: 0 5px 0 #a32500;
+    border: 1px solid #a32500;
+
+    width: auto;
 }
 
 ul.links a:active,
@@ -182,3 +162,23 @@ footer p {
     padding: 0;
 }
 
+
+/* Small screens */
+
+@media (max-width: 480px) {
+    
+    ul.links {
+        margin: 0;
+    }
+    
+    ul.links li {
+        display: block;
+        margin: 0 0 25px;
+    }
+
+    ul.links a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+}
