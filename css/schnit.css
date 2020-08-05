@@ -40,7 +40,7 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
-    background: url(/images/schnit.jpg) center center no-repeat;
+    background: url(images/schnit.jpg) center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
